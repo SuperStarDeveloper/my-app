@@ -1,0 +1,10 @@
+ {
+  "schemaVersion" :2 ,
+  "dockerfileLines" :[
+                        "FROM  webdevops/php-nginx:7.4-alpine",
+                        "ENV PHP_MAX_EXECUTION_TIME 110",
+                        "COPY ./main_app /var/www/html",
+                        "COPY ./php.ini opt/docker/etc/php/php.ini"
+                    ]
+ }
+
